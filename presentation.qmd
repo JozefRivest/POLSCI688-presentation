@@ -1,0 +1,180 @@
+---
+title: "A Loyal Base: Support for Authoritarian Regimes in Times of Crisis"
+author:
+  - name: Jozef Rivest
+    orcid: 0000-0002-3195-3838
+    email: jrivest@umich.edu
+    affiliations: University of Michigan
+
+format: clean-revealjs
+
+bibliography: references.bib
+---
+
+## Puzzle, Question, and Argument 
+
+:::{style="font-size: 95%"}
+
+- Puzzle: 
+  - Comparated to democracy, we know less about the 
+  support for the ideals, norms, and principles of non-
+  democratic regimes (p.1855)
+
+- Question:
+  - Are voters who share the ideals of non-democratic regimes
+  less likely to abandon the incumbent during economic downturns?
+  (p.1855)
+
+- Argument:
+  - In times of economic crises, *instrumental support* is mostly 
+  affected and will result in a decrease in electoral support. Poor 
+  performance will reduce electoral support; but this effect is 
+  *conditional on the initial level of support* for the dominant party; 
+  and voters with higher level of instrumental and normative support 
+  are less likely to defect (Hypotheses 1, 2, 3a, and 3b)
+
+:::
+
+## Data 
+
+- Two surveys fielded in Turkey between May 9 and 24 2021 (n = 6111)
+
+- Respondents were recruited via Facebook advertisements (opt-in survey)
+  - Slightly imbalanced samples (female and non-high school respondents),
+  so they use post-stratification weights to correct for this
+
+- Use CSES 2018 data collection in Turkey to cross-validate their findings
+
+## Research Design
+
+- DV: They develop context-specific items
+  - 10 items to measure general normative support
+  - 4 items to measure normative support for the AKP
+  - 6 items to measure instrumental support for the regime
+
+- Create three indices (scales) with these items
+  - One with all of them 
+  - One only with normative items
+  - One only with instrumental items
+
+- The dimensionality was tested using EFA
+
+- Estimate treatment effect using OLS without controls
+
+::: {.notes}
+- All survey items were on a 0-4 scale, they 
+calculate the avg on each scale and multiply it 
+by 25 to interpret the results as percentage 
+points
+:::
+
+## Research Design
+
+- Two surveys:
+  1. Priming was administered *before* asking the support questions
+    - Hypothesis 1
+  2. Priming was administered *after* asking the support questions
+    - Hypotheses 2 and 3
+
+## Empirical Results
+
+1. Descriptive Analysis
+  - The unidimensional understanding of normative and instrumental 
+  support in Turkey
+  - Average level of normative support greater than instrumental support
+    - Important differences in the level of instrumental 
+    and normative support conditioned on the government 
+    voters 
+
+---
+
+![](./images/figure1.jpg)
+
+---
+
+## Empirical Results {style="font-size: 80%"}
+
+2. Experiment
+  - Hypothesis 1: 
+    - Treated group, and government voters, have lower 
+    levels of instrumental support, but similar levels of normative support
+    - Treatment "ineffective" for non-government voters (already low level 
+    of instrumental and normative support)
+
+  - Hypothesis 2: 
+    - Added income as a control given the imbalance in the second survey
+    - Stronger effect in government voters, where being prompted about 
+    economic crisis reduces the probability to vote and to mobilize for the 
+    government *relative to the control group*
+
+  - Hypothesis 3:
+    - People with higher support for the government are less likely to defect
+    - Replication with CSES still shows that people who strongly like the party 
+    are not defecting from it given the poor economic situation
+
+::: {.notes}
+- The descriptive part was done using only the group that 
+received the DV *before* the treatment (no priming effect)
+:::
+
+## Replication
+
+![](images/replication.png)
+
+## Limits
+
+::: {.incremental style="font-size: 80%"}
+
+1. Potential heterogeneity for income levels and occupation given the treatment 
+  that is left untested
+
+2. The adaptation of the items in the context of Turkey leads to an increase in 
+    internal validity but potentially low external validity. 
+
+3. Exploratory factor analysis (appendix)
+    - Used the Kaiser criterion to retain the number of factors, which has been 
+    extensively criticized [@timmerman_etal18].
+    - No scree plot 
+
+4. Measurement invariance:
+    - The unfortunaltely common reality of measurement and scale construction in social 
+      sciences
+
+5. Bifactor model:
+    - What is this unidimensional structure?
+    - Is it composed of both normative and instrumental preferences? 
+    - Could they be two distinct components of a larger meaningful factor? 
+
+:::
+
+## The Vignette
+
+"Turkey is dealing with an economic crisis for several years now.
+Since the beginning of 2020, the value of the dollar has increased
+from 6 TL (Turkish Liras) to 8.3 TL as the Turkish lira’s value
+decreased by around 25%. As a result of these economic problems,
+the Turkish economy has dropped three places in the ranking of the
+world’s biggest economies. Turkey’s economic problems reveal
+themselves in daily life too. Many citizens complain about the
+continuous increase in prices. Another issue is unemployment, which
+is especially common among the youth."
+
+## Future Research
+
+::: {.incremental}
+
+- The difficult task to recover "true" public preferences
+  in authoritarian regimes
+  - Bayesian IRT
+
+- Predicting defection more accurately: 
+  - Machine learning approach to estimate the conditions where we 
+  can expect people to defect in elections using ridge regression 
+  and K--fold cross--validation on larger samples
+  - A descriptive approach might yield greater information about 
+  the "real-world situation" where we can expect citizens to 
+  defect [@gerring12]
+
+:::
+
+## References
